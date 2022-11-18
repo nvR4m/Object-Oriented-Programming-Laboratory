@@ -1,2 +1,1 @@
-print(2)
-print("aaa")
+print("Some lines deleted")

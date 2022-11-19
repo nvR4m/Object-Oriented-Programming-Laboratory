@@ -1,4 +1,5 @@
 from Classes.Rectange import Rectangle 
+from Classes.ComplexNumber import ComplexNumber
 from operator import attrgetter
 
 def compareArea(a,b):
@@ -20,5 +21,19 @@ def getHighestGrade(list):
         if student.grade is obj.grade:
             new_list.append(obj)
     return new_list
+
+def computeSumComplex(a,b):
+    sumr = a.real_part + b.real_part
+    sumi = a.imag_part + b.imag_part
+    summed_number = ComplexNumber(sumr, sumi)
+    return summed_number
+
+def computeProdComplex(a,b):
+    #compute the real part
+    r_part = a.real_part * b.real_part - a.imag_part * b.imag_part
+    #compute the imaginary part
+    i_part = a.real_part * b.imag_part + a.imag_part * b.real_part
+    product_number = ComplexNumber(r_part, i_part)
+    return product_number
 
 

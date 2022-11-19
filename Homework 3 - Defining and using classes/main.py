@@ -6,10 +6,12 @@ IRIMIA ANDREI - CEN2.2A
 2. CREATE A LIST OF STUDENT OBJECTS AND SORT THE LIST BASED ON MULTIPLE CRITERIA. (Student.pt, utils.py)
 3. SEARCH THE LIST FOR A SPECIFIC STUDENT
 4. WRITE FUNCTION THAT RETURNS STUDENT(s) WITH THE HIGHEST GRADE
+5. CREATE CLASS COMPLEX NUMBER. USE IT TO COMPUTE THE SUM AND PRODUCT OF TWO COMPLEX NUMBERS
 '''
-from utils import compareArea, comparePerimeter, getHighestGrade
+from utils import compareArea, comparePerimeter, getHighestGrade, computeSumComplex, computeProdComplex
 from Classes.Rectange import Rectangle
 from Classes.Student import Student
+from Classes.ComplexNumber import ComplexNumber
 
 #1
 print("---------------------------")
@@ -55,13 +57,29 @@ for obj in list:
     if obj.name is "Cosmin Papa-Lapte":
         print(obj.name)
 print("---------------------------")
-#4
 
+#4
 highest_grade_list = getHighestGrade(list)
 print("Student(s) with the highest grades are: ")
 for obj in highest_grade_list:
     print("Student " + obj.name + " with a grade of: " + str(obj.grade))
 print("---------------------------")
+
+#5
+cn1 = ComplexNumber(2, 5)
+cn2 = ComplexNumber(4, 7)
+print("The first complex number is: ") 
+cn1.display_complex()
+print("The second complex number is: ") 
+cn2.display_complex()
+summed_cn = computeSumComplex(cn1, cn2)
+product_cn = computeProdComplex(cn1, cn2)
+print("The sum of those 2 numbers is: ")
+summed_cn.display_complex()
+print("The product of those 2 numbers is: ")
+product_cn.display_complex()
+print("---------------------------")
+
 
 
 

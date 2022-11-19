@@ -2,11 +2,12 @@
 HOMEWORK 3
 IRIMIA ANDREI - CEN2.2A
 
-1. COMPUTE THE PAERIMETER AND AREA OF A RECTANGLE. COMPARE RECRANGLES. (Rectangle.py, utils.py)
-2. CREATE A LIST OF STUDENT OBJECTS AND SORT THE LIST BASED ON MULTIPLE CRITERIA. (Student.pt, utils.py)
-3. SEARCH THE LIST FOR A SPECIFIC STUDENT
+1. COMPUTE THE PAERIMETER AND AREA OF A RECTANGLE. COMPARE RECRANGLES. 
+2. CREATE A LIST OF STUDENT OBJECTS AND SORT THE LIST BASED ON MULTIPLE CRITERIA.
+3. SEARCH THE LIST FOR A SPECIFIC STUDENT 
 4. WRITE FUNCTION THAT RETURNS STUDENT(s) WITH THE HIGHEST GRADE
 5. CREATE CLASS COMPLEX NUMBER. USE IT TO COMPUTE THE SUM AND PRODUCT OF TWO COMPLEX NUMBERS
+7. COUNT HOW MANY INSTANCES OF STUDENT CLASS ARE MADE
 '''
 from utils import compareArea, comparePerimeter, getHighestGrade, computeSumComplex, computeProdComplex
 from Classes.Rectange import Rectangle
@@ -79,6 +80,12 @@ summed_cn.display_complex()
 print("The product of those 2 numbers is: ")
 product_cn.display_complex()
 print("---------------------------")
+
+#7
+print("There are " + str(Student.counter) + " instances of Student class")
+print("---------------------------")
+
+
 
 
 

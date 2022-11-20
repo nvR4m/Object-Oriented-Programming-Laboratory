@@ -15,10 +15,8 @@ IRIMIA ANDREI - CEN2.2A
 13. MAKE LIST OF CLASS PERSON. SORT LIST BY AGE.
 14. SOLVE THE EQUATION 'ax+b=0'
 
-
-
-
 '''
+
 #1
 from utils import interchange, f, max, timeToString, size, module, maximumOfThree, sum2, computeResult, returnMinAge, isSameAge
 from Classes.Student import Student

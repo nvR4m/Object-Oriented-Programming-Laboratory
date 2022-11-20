@@ -8,6 +8,7 @@ IRIMIA ANDREI - CEN2.2A
 4. WRITE FUNCTION THAT RETURNS STUDENT(s) WITH THE HIGHEST GRADE
 5. CREATE CLASS COMPLEX NUMBER. USE IT TO COMPUTE THE SUM AND PRODUCT OF TWO COMPLEX NUMBERS
 7. COUNT HOW MANY INSTANCES OF STUDENT CLASS ARE MADE
+
 '''
 from utils import compareArea, comparePerimeter, getHighestGrade, computeSumComplex, computeProdComplex
 from Classes.Rectange import Rectangle

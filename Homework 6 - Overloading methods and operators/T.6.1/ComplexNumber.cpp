@@ -29,3 +29,7 @@ ComplexNumber ComplexNumber::operator+ (const ComplexNumber& cp) {
 void ComplexNumber::printComplexNumber() {
 	cout << this->realPart << "+" << this->imagPart << "i"<<endl;
 }
+
+bool ComplexNumber::operator< (ComplexNumber cp) {
+	return ~(*this) < ~cp;
+}
